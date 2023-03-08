@@ -14,7 +14,7 @@
 				var isIpad = navigator.userAgent.toLowerCase().indexOf("ipad") > -1;
 				if (!isIpad && isMobile && window.location.pathname) {
 					window.fetch = function () { };
-					window.location.pathname = window.location.pathname + "/mobile";
+					window.location.pathname = window.location.pathname ; //+ "/mobile";
 				}
 			}
 		})();
